@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.hero {
+  width: calc(100% - 2.4rem);
+  margin: 1.2rem;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../Images/about-image.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid #333;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links li a:hover {
+    color: #555;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-buttons button {
+    padding: 1rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #555;
+}
+
+.nav-buttons button a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 70%;
+}
+
+.logo img {
+    height: 90px;
+    cursor: pointer;
+}
+
+.about-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 4rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+}
+
+.about-heading h1 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        z-index: 1001; /* stays above menu */
+    }
+
+    /* Fullscreen menu container */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .nav-overlay.active {
+        transform: translateX(0);
+    }
+
+    .nav-links,
+    .nav-buttons {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+
+    .nav-buttons button {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .about-heading h1 {
+        letter-spacing: 1px;
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 864px) {
+    .nav-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        z-index: 1001; /* stays above menu */
+    }
+
+    /* Fullscreen menu container */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    .nav-overlay.active {
+        transform: translateX(0);
+    }
+
+    .nav-links,
+    .nav-buttons {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+
+    .nav-buttons button {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+    }
+}
