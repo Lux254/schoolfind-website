@@ -8,7 +8,7 @@ This project is currently under development — starting with the **landing page
 
 ## 🌍 Live Demo
 
-🔗 [View the site here](https://Lux254.github.io/schoolfind-website)  
+🔗 [View the site here](https://lux254.github.io/schoolfind-website)  
 
 ---
 
