@@ -8,7 +8,7 @@ This project is currently under development — starting with the **landing page
 
 ## 🌍 Live Demo
 
-🔗 [View the site here](https://your-username.github.io/your-repo-name)  
+🔗 [View the site here](https://your-username.github.io/schoolfind-website)  
 
 ---
 
