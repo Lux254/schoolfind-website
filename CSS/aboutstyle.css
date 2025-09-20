@@ -11,6 +11,12 @@ p {
     color: #333;
 }
 
+.divider {
+  width: 50%;      
+  border: 1px solid #333; 
+  margin: 1rem auto; 
+}
+
 .hero {
   width: calc(100% - 2.4rem);
   margin: 1.2rem;
@@ -109,7 +115,158 @@ p {
     font-size: 2rem;
 }
 
+.story {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+}
 
+.class-pic img {
+    width: 50vw;
+    height: 100%;
+}
+
+.story-txt {
+    padding: 1rem;
+}
+
+h1, h2, h3, h4, p {
+    color: #333;
+}
+
+.story-txt h1 {
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4rem;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.member-info img {
+    width: 100%;
+    height: 15rem;
+}
+
+.member-name h4 {
+    font-weight: lighter;
+}
+
+.team h1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feedback h1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feedback-info {
+    margin: 0 10rem 5rem;
+}
+
+.user-review {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+
+.user-msg {
+    border: 2px solid #333;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.user-info {
+    padding: 1rem;
+}
+
+.user-info img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+}
+
+.user-role {
+    margin-top: 1rem;
+}
+
+.user-role h5 {
+    color: #555;
+}
+
+.rating {
+    margin-bottom: 1rem;
+}
+
+.cta {
+    margin: 4rem 20rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cta button {
+    padding: 1rem 1.5rem;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #555;
+}
+
+.cta button a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.socials a {
+    padding: 1rem;
+    color: black;
+}
+
+.socials a:hover {
+    color: #555;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.quick-links a:hover {
+    color: #555;
+}
+
+.description p {
+    color: #555;
+}
 
 /* Mobile styles */
 @media (max-width: 768px) {
@@ -170,6 +327,41 @@ p {
     .about-heading h1 {
         letter-spacing: 1px;
         font-size: .8rem;
+    }
+
+    .member-info img {
+        height: auto;
+    }
+
+    .story {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .story img {
+        display: none;
+    }
+
+    .team-members {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .user-review {
+        flex-direction: column;
+    }
+
+    #reverse {
+        flex-direction: column-reverse;
+    }
+
+    .feedback-info {
+        margin: 1rem;
+    }
+
+    .cta {
+        padding: 1rem;
+        margin: 1rem;
     }
 }
 
