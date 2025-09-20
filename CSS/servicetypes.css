@@ -11,14 +11,14 @@ p {
     color: #333;
 }
 
-.hero {
-  width: calc(100% - 2.4rem);
-  margin: 1.2rem;
-  height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../Images/service-front-page.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
+h1, h3, li {
+    color: #333;
+}
+
+.divider {
+  width: 100%;      
+  border: 1px solid #555; 
+  margin: 3rem auto; 
 }
 
 .navbar {
@@ -93,22 +93,6 @@ p {
     cursor: pointer;
 }
 
-.about-heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2rem 4rem;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(2px);
-}
-
-.about-heading h1 {
-    color: white;
-    letter-spacing: 2px;
-    font-size: 2rem;
-}
-
 footer {
     background-color: whitesmoke;
     text-align: center;
@@ -142,58 +126,41 @@ footer {
     color: #555;
 }
 
-.services h1 {
+main {
+    margin: 10rem 15rem;
+}
+
+main button {
     text-align: center;
-    color: #333;
-    margin: 4rem;
-    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    background-color: #333;
+    border: none;
+    border-radius: 1rem;
 }
 
-.services-intro p {
-    margin: 0 20rem 2rem;
-}
-
-.service-pics {
-    display: flex;
-    flex-direction: column;
-    margin: 5rem 0 10rem;
-}
-
-.service-box {
-    display: flex;
-    flex-direction: row;
-}
-
-.image-cont {
-    position: relative;
-    width: 50%;
-}
-
-.image-txt {
-    position: absolute;
-}
-
-.overlay-txt {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    font-weight: bold;
-    padding: 1rem;
-    background: rgba(10, 10, 10, 0.15);
-    backdrop-filter: blur(3px);
-}
-
-.overlay-txt a {
-    color: white;
+main button a {
     text-decoration: none;
+    color: white;
 }
 
-.image-cont img {
-    width: 100%;
-    height: 30rem;
+main h1 {
+    margin-bottom: 2rem;
+}
+
+main h1, main h3 {
+    letter-spacing: 2px;
+}
+
+main ul {
+    padding: 2rem;
+}
+
+main li {
+    padding: .5rem;
+}
+
+.sub-heading {
+    margin-bottom: 1rem;
 }
 
 /* Mobile styles */
@@ -257,22 +224,8 @@ footer {
         font-size: .8rem;
     }
 
-    .service-box {
-        flex-direction: column;
-    }
-
-    .services-intro p {
-        margin: 0 2rem 2rem;
-    }
-
-    .image-cont {
-        width: calc(100% - 2rem);
-        margin: 0 1rem;
-    }
-
-    .image-cont img {
-        width: 100%;
-        height: auto;
+    main {
+        margin: 2rem;
     }
 }
 
