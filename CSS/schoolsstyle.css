@@ -93,22 +93,103 @@ p {
     cursor: pointer;
 }
 
-.about-heading {
-    position: absolute;
+.search-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+    width: calc(auto - 10rem);
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 2rem 4rem;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(2px);
+    margin-right: 5rem;
 }
 
-.about-heading h1 {
+.main-search-box {
+    padding: 1rem;
+}
+
+.main-search-box h2 {
+    text-align: center;
     color: white;
     letter-spacing: 2px;
-    font-size: 2rem;
 }
 
+.main-search-area {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: .5rem;
+}
+
+.main-search-area button {
+    color: white;
+    background-color: #333;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    cursor: pointer;
+}
+
+.main-search-area button:hover {
+    color: white;
+    background-color: #555;
+}
+
+.main-search-area input {
+    border: none;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.search-btn {
+    padding: .5rem;
+}
+
+.main-search-area input{
+    padding: 1rem;
+}
+
+.search-bar {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-btn {
+  white-space: nowrap;
+}
+
+.search-head {
+    white-space: nowrap;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filters input, .filters select {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+
+.filters input {
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.filters input:hover {
+    background-color: #555;
+}
+
+.declaration {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /* Mobile styles */
@@ -170,6 +251,15 @@ p {
     .about-heading h1 {
         letter-spacing: 1px;
         font-size: .8rem;
+    }
+
+    .search-container {
+        margin-right: .5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
     }
 }
 
