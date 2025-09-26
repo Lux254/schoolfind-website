@@ -121,6 +121,7 @@ p {
 .hero-buttons {
     display: flex;
     justify-content: space-around;
+    white-space: nowrap;
 }
 
 .hero-buttons button {
